@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eaglercraft版本在线游玩</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #333;
+        }
+        .container {
+            text-align: center;
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin: 10px 0;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        button:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>↓Eaglercraft 版本选择↓<br>点击按钮后将会直接打开游戏</h1>
+        <h2>官方版本<h2>
+        <button onclick="openPage('EaglercraftX_1.8_u43_Offline_Signed.html')">官方 1.8.8版本</button>
+        <h2>破解版本<h2>
+        <button onclick="openPage('DragonX V3 Client.html')">DragonX V3 Client</button>
+    </div>
+
+    <script>
+        function openPage(url) {
+            window.open(url, "_blank");
+        }
+    </script>
+</body>
+</html>
