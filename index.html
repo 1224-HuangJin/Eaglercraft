@@ -13,12 +13,13 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            background: url('mienecraft.jpg') no-repeat center center fixed;
+            background-size: cover;
             color: #333;
         }
         .container {
             text-align: center;
-            background: #fff;
+            background: rgba(255, 255, 255, 0.8); /* 半透明背景 */
             padding: 20px;
             border-radius: 12px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -45,9 +46,9 @@
 <body>
     <div class="container">
         <h1>↓Eaglercraft 版本选择↓<br>点击按钮后将会直接打开游戏</h1>
-        <h2>官方版本<h2>
+        <h2>官方版本</h2>
         <button onclick="openPage('EaglercraftX_1.8_u43_Offline_Signed.html')">官方 1.8.8版本</button>
-        <h2>破解版本<h2>
+        <h2>破解版本</h2>
         <button onclick="openPage('DragonX V3 Client.html')">DragonX V3 Client</button>
     </div>
 
