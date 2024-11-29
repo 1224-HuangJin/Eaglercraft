@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="在线游玩 Minecraft 的 Eaglercraft 版本，提供 1.5.2 和 1.8.8 官方版本及 DragonX V3 Client 破解版本。">
+    <meta name="keywords" content="Eaglercraft, Minecraft, 在线游玩, 1.5.2版本, 1.8.8版本, 破解版本, DragonX">
+    <meta name="author" content="1224huangjin@gmail.com">
     <title>Eaglercraft版本在线游玩</title>
     <style>
         body {
@@ -13,16 +16,17 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background: url('minecraft.jpg') no-repeat center center fixed;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('minecraft.jpg') no-repeat center center fixed;
             background-size: cover;
-            color: #333;
+            color: #fff;
         }
         .container {
             text-align: center;
-            background: rgba(255, 255, 255, 0.8); /* 半透明背景 */
+            background: rgba(0, 0, 0, 0.7);
             padding: 20px;
             border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
         }
         button {
             background-color: #4caf50;
@@ -47,15 +51,17 @@
     <div class="container">
         <h1>↓Eaglercraft 版本选择↓<br>点击按钮后将会直接打开游戏</h1>
         <h3>官方版本</h3>
-        <button onclick="openPage('Offline_Download_Version_1.5.2.html')">官方 1.5.2版本</button>
-        <button onclick="openPage('EaglercraftX_1.8_u43_Offline_Signed.html')">官方 1.8.8版本</button>
+        <button onclick="openPage('Offline_Download_Version_1.5.2.html')" aria-label="打开 1.5.2 官方版本">官方 1.5.2版本</button>
+        <button onclick="openPage('EaglercraftX_1.8_u43_Offline_Signed.html')" aria-label="打开 1.8.8 官方版本">官方 1.8.8版本</button>
         <h3>破解版本</h3>
-        <button onclick="openPage('DragonX V3 Client.html')">DragonX V3 Client</button>
-        <h5>若您拥有更多版本请联系"[1224huangjin@gmail.com](mailto:1224huangjin@gmail.com)，谢谢"
+        <button onclick="openPage('DragonX V3 Client.html')" aria-label="打开 DragonX V3 客户端">DragonX V3 Client</button>
+        <h5>若您拥有更多版本请联系<a href="mailto:1224huangjin@gmail.com" style="color: #4caf50;">1224huangjin@gmail.com</a></h5>
     </div>
     <script>
         function openPage(url) {
-            window.open(url, "_blank");
+            if (confirm("确定打开这个版本？")) {
+                window.open(url, "_blank");
+            }
         }
     </script>
 </body>
